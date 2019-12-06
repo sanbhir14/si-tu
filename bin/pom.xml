@@ -71,7 +71,10 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-taglibs</artifactId>
 		</dependency>
-
+		<dependency>
+ 	 		<groupId>org.postgresql</groupId>
+  			<artifactId>postgresql</artifactId>
+			</dependency>
 	</dependencies>
 
 	<build>
@@ -80,6 +83,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<!-- <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin> -->
 		</plugins>
 	</build>
 
